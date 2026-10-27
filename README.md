@@ -44,7 +44,7 @@ The Hacktoberfest prompt asks: *Where does an open-based approach work better th
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yashselokar2025/ghost-in-the-sensor.git
+git clone https://github.com/yashselokar2025/Ghost-in-the-sensor.git
 cd ghost-in-the-sensor
 ```
 
