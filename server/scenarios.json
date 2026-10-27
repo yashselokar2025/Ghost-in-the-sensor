@@ -1,7 +1,7 @@
 [
   {
     "id": "scenario-victorian-pump",
-    "name": "Victorian Boiler Room #3 (Abandoned 1892)",
+    "name": "Victorian Boiler Room #3 (1892)",
     "description": "Subterranean steam pipe facility with violent nocturnal water pressure spikes and acoustic metal clangs.",
     "location": "Old Municipal Waterworks - Vault B",
     "ambientBaseline": { "temp": 18.5, "emf": 12.0, "acoustic": 22.0 },
@@ -16,6 +16,20 @@
     ]
   },
   {
+    "id": "scenario-smart-fridge",
+    "name": "Possessed Smart Fridge (2026)",
+    "description": "Smart Samsung fridge spitting cursed ice cubes at 3:14 AM while playing 90s dial-up modem frequencies over Bluetooth.",
+    "location": "Smart Kitchen - Sub-Zero Zone",
+    "ambientBaseline": { "temp": 4.0, "emf": 12.0, "acoustic": 18.0 },
+    "readings": [
+      { "time": "03:10 AM", "temp": 4.2, "emf": 15.0, "acoustic": 18.0, vibration: 0.02, "pressure": 30.0 },
+      { "time": "03:12 AM", "temp": 1.1, "emf": 45.0, "acoustic": 35.0, vibration: 0.15, "pressure": 30.0 },
+      { "time": "03:14 AM", "temp": -18.5, "emf": 95.8, "acoustic": 88.0, vibration: 1.85, "pressure": 30.4 },
+      { "time": "03:16 AM", "temp": -12.0, "emf": 82.0, "acoustic": 72.0, vibration: 0.95, "pressure": 30.2 },
+      { "time": "03:20 AM", "temp": 2.0, "emf": 30.0, "acoustic": 22.0, vibration: 0.08, "pressure": 30.0 }
+    ]
+  },
+  {
     "id": "scenario-witching-attic",
     "name": "The Witching Hour Attic Studio",
     "description": "Smart home attic thermistors recording inexplicable cryogenic drops and wild electromagnetic fluctuations while residents sleep.",
@@ -26,23 +40,23 @@
       { "time": "03:08 AM", "temp": 19.5, "emf": 16.0, "acoustic": 18.2, "vibration": 0.04, "pressure": 29.7 },
       { "time": "03:15 AM", "temp": 15.2, "emf": 42.0, "acoustic": 26.5, "vibration": 0.10, "pressure": 29.5 },
       { "time": "03:22 AM", "temp": 12.0, "emf": 76.5, "acoustic": 44.0, "vibration": 0.22, "pressure": 29.2 },
-      { "time": "03:28 AM", "temp": 9.4, "emf": 94.2, "acoustic": 52.0, "vibration": 0.35, "pressure": 28.9 },
+      { "time": "03:28 AM", "temp": 8.4, "emf": 94.2, "acoustic": 52.0, "vibration": 0.35, "pressure": 28.9 },
       { "time": "03:33 AM", "temp": 13.5, "emf": 65.0, "acoustic": 31.0, "vibration": 0.15, "pressure": 29.4 },
       { "time": "03:40 AM", "temp": 19.8, "emf": 12.5, "acoustic": 16.0, "vibration": 0.03, "pressure": 29.8 }
     ]
   },
   {
     "id": "scenario-dia-muertos",
-    "name": "Día de los Muertos Altar Room",
-    "description": "An ofrenda with marigolds and copal incense exhibiting gentle thermal warming and melodic acoustic resonance at midnight.",
-    "location": "Ancestral Living Room - Altar Corner",
+    "name": "Día de los Muertos Abuelita Altar",
+    "description": "An ofrenda with marigolds exhibiting gentle thermal warming and melodic harmonic resonance at midnight.",
+    "location": "Living Room - Altar Corner",
     "ambientBaseline": { "temp": 22.0, "emf": 10.0, "acoustic": 18.0 },
     "readings": [
       { "time": "11:50 PM", "temp": 22.0, "emf": 10.2, "acoustic": 18.1, "vibration": 0.01, "pressure": 30.0 },
       { "time": "11:55 PM", "temp": 22.2, "emf": 12.0, "acoustic": 19.4, "vibration": 0.02, "pressure": 30.0 },
-      { "time": "12:00 AM", "temp": 23.8, "emf": 22.5, "acoustic": 24.0, "vibration": 0.04, "pressure": 30.1 },
-      { "time": "12:05 AM", "temp": 24.9, "emf": 28.0, "acoustic": 27.5, "vibration": 0.06, "pressure": 30.2 },
-      { "time": "12:12 AM", "temp": 24.2, "emf": 25.1, "acoustic": 25.0, "vibration": 0.05, "pressure": 30.1 },
+      { "time": "12:00 AM", "temp": 24.5, "emf": 22.5, "acoustic": 24.0, "vibration": 0.04, "pressure": 30.1 },
+      { "time": "12:05 AM", "temp": 25.8, "emf": 28.0, "acoustic": 27.5, "vibration": 0.06, "pressure": 30.2 },
+      { "time": "12:12 AM", "temp": 24.9, "emf": 25.1, "acoustic": 25.0, "vibration": 0.05, "pressure": 30.1 },
       { "time": "12:20 AM", "temp": 23.0, "emf": 16.0, "acoustic": 21.0, "vibration": 0.02, "pressure": 30.0 },
       { "time": "12:30 AM", "temp": 22.1, "emf": 11.2, "acoustic": 18.5, "vibration": 0.01, "pressure": 30.0 }
     ]
