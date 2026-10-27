@@ -1,0 +1,30 @@
+services:
+  # Express Backend Web Service
+  - type: web
+    name: ghost-in-the-sensor-backend
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+
+  # Vite React Static Frontend
+  - type: static
+    name: ghost-in-the-sensor-frontend
+    rootDir: client
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: ghost-in-the-sensor-backend
+          property: host

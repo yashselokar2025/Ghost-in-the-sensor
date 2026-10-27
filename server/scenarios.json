@@ -1,0 +1,50 @@
+[
+  {
+    "id": "scenario-victorian-pump",
+    "name": "Victorian Boiler Room #3 (Abandoned 1892)",
+    "description": "Subterranean steam pipe facility with violent nocturnal water pressure spikes and acoustic metal clangs.",
+    "location": "Old Municipal Waterworks - Vault B",
+    "ambientBaseline": { "temp": 18.5, "emf": 12.0, "acoustic": 22.0 },
+    "readings": [
+      { "time": "02:55 AM", "temp": 18.4, "emf": 12.1, "acoustic": 22.4, "vibration": 0.05, "pressure": 32.1 },
+      { "time": "03:00 AM", "temp": 18.2, "emf": 14.5, "acoustic": 24.1, "vibration": 0.08, "pressure": 32.5 },
+      { "time": "03:05 AM", "temp": 17.5, "emf": 28.3, "acoustic": 38.0, "vibration": 0.25, "pressure": 36.2 },
+      { "time": "03:10 AM", "temp": 14.1, "emf": 62.0, "acoustic": 68.5, "vibration": 0.85, "pressure": 48.9 },
+      { "time": "03:14 AM", "temp": 11.8, "emf": 88.4, "acoustic": 84.2, "vibration": 1.45, "pressure": 58.7 },
+      { "time": "03:18 AM", "temp": 13.0, "emf": 72.1, "acoustic": 61.0, "vibration": 0.72, "pressure": 42.1 },
+      { "time": "03:25 AM", "temp": 16.9, "emf": 25.0, "acoustic": 30.5, "vibration": 0.12, "pressure": 33.0 }
+    ]
+  },
+  {
+    "id": "scenario-witching-attic",
+    "name": "The Witching Hour Attic Studio",
+    "description": "Smart home attic thermistors recording inexplicable cryogenic drops and wild electromagnetic fluctuations while residents sleep.",
+    "location": "Private Residence - Upper Gables",
+    "ambientBaseline": { "temp": 21.0, "emf": 8.0, "acoustic": 15.0 },
+    "readings": [
+      { "time": "03:00 AM", "temp": 20.8, "emf": 8.2, "acoustic": 14.8, "vibration": 0.02, "pressure": 29.8 },
+      { "time": "03:08 AM", "temp": 19.5, "emf": 16.0, "acoustic": 18.2, "vibration": 0.04, "pressure": 29.7 },
+      { "time": "03:15 AM", "temp": 15.2, "emf": 42.0, "acoustic": 26.5, "vibration": 0.10, "pressure": 29.5 },
+      { "time": "03:22 AM", "temp": 12.0, "emf": 76.5, "acoustic": 44.0, "vibration": 0.22, "pressure": 29.2 },
+      { "time": "03:28 AM", "temp": 9.4, "emf": 94.2, "acoustic": 52.0, "vibration": 0.35, "pressure": 28.9 },
+      { "time": "03:33 AM", "temp": 13.5, "emf": 65.0, "acoustic": 31.0, "vibration": 0.15, "pressure": 29.4 },
+      { "time": "03:40 AM", "temp": 19.8, "emf": 12.5, "acoustic": 16.0, "vibration": 0.03, "pressure": 29.8 }
+    ]
+  },
+  {
+    "id": "scenario-dia-muertos",
+    "name": "Día de los Muertos Altar Room",
+    "description": "An ofrenda with marigolds and copal incense exhibiting gentle thermal warming and melodic acoustic resonance at midnight.",
+    "location": "Ancestral Living Room - Altar Corner",
+    "ambientBaseline": { "temp": 22.0, "emf": 10.0, "acoustic": 18.0 },
+    "readings": [
+      { "time": "11:50 PM", "temp": 22.0, "emf": 10.2, "acoustic": 18.1, "vibration": 0.01, "pressure": 30.0 },
+      { "time": "11:55 PM", "temp": 22.2, "emf": 12.0, "acoustic": 19.4, "vibration": 0.02, "pressure": 30.0 },
+      { "time": "12:00 AM", "temp": 23.8, "emf": 22.5, "acoustic": 24.0, "vibration": 0.04, "pressure": 30.1 },
+      { "time": "12:05 AM", "temp": 24.9, "emf": 28.0, "acoustic": 27.5, "vibration": 0.06, "pressure": 30.2 },
+      { "time": "12:12 AM", "temp": 24.2, "emf": 25.1, "acoustic": 25.0, "vibration": 0.05, "pressure": 30.1 },
+      { "time": "12:20 AM", "temp": 23.0, "emf": 16.0, "acoustic": 21.0, "vibration": 0.02, "pressure": 30.0 },
+      { "time": "12:30 AM", "temp": 22.1, "emf": 11.2, "acoustic": 18.5, "vibration": 0.01, "pressure": 30.0 }
+    ]
+  }
+]
