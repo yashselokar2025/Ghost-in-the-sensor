@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Ghost, Radio, Skull, Sparkles, Volume2, VolumeX, Upload, Play, Pause, 
-  RefreshCw, AlertTriangle, ShieldCheck, Flame, Zap, Camera, Siren, Volume1
+  RefreshCw, AlertTriangle, ShieldCheck, Flame, Zap, Camera, Siren, Volume1, Film
 } from 'lucide-react';
 import SpectralRadar from './components/SpectralRadar';
 import TelemetryCards from './components/TelemetryCards';
@@ -79,6 +79,7 @@ export default function App() {
   const [isLiveScanning, setIsLiveScanning] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(false);
   const [ambientDrone, setAmbientDrone] = useState(false);
+  const [videoBgEnabled, setVideoBgEnabled] = useState(true);
   const [jumpscareActive, setJumpscareActive] = useState(false);
   const [analysis, setAnalysis] = useState(null);
   const [dossier, setDossier] = useState(null);
@@ -294,6 +295,22 @@ ${dossier.openInnovationStatement}
 
   return (
     <div className="min-h-screen bg-ghost-dark text-slate-100 flex flex-col relative select-none">
+      {/* Full-Screen Continuous Looping Demon Hands Live Video Wallpaper */}
+      {videoBgEnabled && (
+        <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover object-center opacity-35 filter contrast-125 brightness-90 scale-105"
+            src="/demon-hands.mp4"
+          />
+          {/* Atmospheric Vignette & Contrast Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-ghost-dark/85 via-ghost-dark/65 to-ghost-dark/90"></div>
+        </div>
+      )}
+
       {/* Jumpscare / Glitch Breach Overlay */}
       <JumpscareOverlay 
         active={jumpscareActive} 
@@ -326,6 +343,20 @@ ${dossier.openInnovationStatement}
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
+            {/* Live Wallpaper Toggle */}
+            <button
+              onClick={() => setVideoBgEnabled(!videoBgEnabled)}
+              className={`p-2 rounded-lg border font-mono text-xs flex items-center gap-1.5 transition-all ${
+                videoBgEnabled 
+                  ? 'bg-purple-950/70 border-purple-500 text-purple-300 shadow-md shadow-purple-950' 
+                  : 'bg-slate-900 border-slate-800 text-slate-500'
+              }`}
+              title="Toggle Demon Hands Live Wallpaper"
+            >
+              <Film className="w-4 h-4" />
+              <span className="hidden xl:inline">{videoBgEnabled ? 'WALLPAPER ON' : 'WALLPAPER OFF'}</span>
+            </button>
+
             {/* Ambient Drone Toggle */}
             <button
               onClick={toggleDrone}
